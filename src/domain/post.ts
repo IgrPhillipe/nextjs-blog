@@ -43,14 +43,15 @@ export type Cover = CoverFormat & {
 
 export type Post = {
   id: number;
-  title: string;
-  content: string;
-  slug: string;
-  author: Author;
-  category: Category;
-  created_by: CreatedBy;
-  updated_by: CreatedBy;
-  created_at: string;
-  updated_at: string;
-  cover: Cover;
+  attributes: {
+    id: number;
+    title: string;
+    content: string;
+    slug: string;
+    author: Author;
+    category: Category;
+    createdAt: string;
+    updatedAt: string;
+    cover: Cover;
+  }
 };
