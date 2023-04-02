@@ -44,7 +44,6 @@ export type Cover = CoverFormat & {
 export type Post = {
   id: number;
   attributes: {
-    id: number;
     title: string;
     content: string;
     slug: string;

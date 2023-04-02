@@ -1,16 +1,30 @@
-import Head from 'next/head'
+import { GetStaticProps } from "next";
+import { Inter } from 'next/font/google'
+import { getPosts } from "./api";
+import { Home } from "@/containers";
+import { Post } from "@/domain";
 
-export default function Home() {
+const inter = Inter({ subsets: ['latin'] })
+
+type PageProps = {
+  posts: Post[];
+};
+
+export default function App({ posts }: PageProps): JSX.Element {
+
   return (
-    <>
-      <Head>
-        <title>NextJs | Blog Example</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <main>
-        <h1>Alo</h1>
-      </main>
-    </>
+    <div className={inter.className}>
+      <Home posts={posts} />      
+    </div>
   )
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { data } = await getPosts();
+
+  return {
+    props: {
+      posts: data,
+    }
+  }
+};
