@@ -10,6 +10,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  transition: opacity 300ms ease-in-out;
+  
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const Image = styled.img`
