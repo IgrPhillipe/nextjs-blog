@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 import { Roboto } from 'next/font/google'
-import { getPosts } from "./api";
+import { getAllPosts } from "./api";
 import { Home } from "@/containers";
 import { Header } from "@/components";
 import { Post } from "@/domain";
@@ -29,7 +29,7 @@ export default function App({ posts }: PageProps): JSX.Element {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await getPosts();
+  const { data } = await getAllPosts({ query: '_sort=create_at:DESC' });
 
   return {
     props: {

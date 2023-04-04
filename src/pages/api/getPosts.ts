@@ -1,6 +1,13 @@
 import { Post, StrapiResponse } from '@/domain'
 import axios from '@/config/axios'
 
-export const getPosts = async (): Promise<StrapiResponse<Post[]>> => {
-  return (await axios.get('/posts?populate=*')).data;
+type GetAllPostsProps = {
+  query?: string;
+}
+
+export const getAllPosts = async ({ query }: GetAllPostsProps): Promise<StrapiResponse<Post[]>> => {
+  const url = query ? `/posts?populate=*&${query}` : '/posts?populate=*&'
+  const { data } = await axios.get(url)
+
+  return data;
 }
