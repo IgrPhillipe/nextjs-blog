@@ -1,10 +1,16 @@
 import { GetStaticProps } from "next";
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import { getPosts } from "./api";
 import { Home } from "@/containers";
+import { Header } from "@/components";
 import { Post } from "@/domain";
+import { Container, Page } from "./styles";
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: ['100', '300', '400', '500', '700', '900'],
+  style: ['normal'],
+  subsets: ['latin'],
+})
 
 type PageProps = {
   posts: Post[];
@@ -13,9 +19,12 @@ type PageProps = {
 export default function App({ posts }: PageProps): JSX.Element {
 
   return (
-    <div className={inter.className}>
-      <Home posts={posts} />      
-    </div>
+    <Page>
+      <Header />
+      <Container className={roboto.className}>
+        <Home posts={posts} />      
+      </Container>
+    </Page>
   )
 }
 

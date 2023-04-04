@@ -1,14 +1,22 @@
+export interface StrapiPagination {
+  total: number;
+  page: number;
+  pageCount: number;
+  pageSize: number;
+};
+
+export interface StrapiInstance<T> {
+  id: number;
+  attributes: T;
+}
+
+export interface StrapiDataInstance<T> {
+  data: StrapiInstance<T>;
+}
+
 export interface StrapiResponse<T> {
-  data: {
-    id: number;
-    attributes: T;
-  }[];
+  data: T;
   meta: {
-    pagination: {
-      total: number;
-      page: number;
-      pageCount: number;
-      pageSize: number;
-    };
+    pagination: StrapiPagination;
   };
 };
