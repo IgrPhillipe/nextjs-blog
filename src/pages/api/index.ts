@@ -1,1 +1,5 @@
-export { getAllPosts } from './getPosts'
+export {
+  getAllPosts,
+  countAllPosts,
+  getPostBySlug,
+} from './posts'

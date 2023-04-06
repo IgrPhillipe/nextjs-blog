@@ -27,18 +27,18 @@ export const LinkBox = styled.div<LinkProps>`
   align-items: center;
   justify-content: center;
   height: 60%;
-  border-bottom: ${({ active, theme }) => active ? `3px solid ${theme.colors.mulberry}` : '3px solid transparent'};
+  border-bottom: ${({ active }) => active ? '3px solid black' : '3px solid transparent'};
 
   a {
-    color: ${({ active, theme }) => active ? theme.colors.mulberry : theme.colors.lightGray};
+    color: ${({ active, theme }) => active ? 'black' : theme.colors.lightGray};
   }
 
 
   &:hover {
-    border-bottom: ${({ theme }) => `3px solid ${theme.colors.mulberry}`};
+    border-bottom: 3px solid black;
 
     a {
-      color: ${({ theme }) => `3px solid ${theme.colors.mulberry}`};
+      color: black;
     }
   }
 

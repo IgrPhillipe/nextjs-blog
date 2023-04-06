@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 type SmallProps = {
   light?: boolean;
@@ -6,16 +6,12 @@ type SmallProps = {
 
 export const Container = styled.div`
   width: 100%;
-  height: 20rem;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  transition: opacity 300ms ease-in-out;
-  
-  &:hover {
-    opacity: 0.8;
-  }
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -24,8 +20,8 @@ export const Container = styled.div`
 `;
 
 export const Cover = styled.div`
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 25rem;
   background-color: ${({ theme }) => theme.colors.lightGray};
   object-fit: cover;
   border-radius: 0.5rem;
@@ -45,7 +41,6 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  cursor: pointer;
   gap: 1rem;
 
   @media (max-width: 768px) {

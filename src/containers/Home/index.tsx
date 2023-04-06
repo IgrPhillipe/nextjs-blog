@@ -1,35 +1,37 @@
-import { Post as PostType} from "@/domain";
-import { Container, PostsContainer, Title } from "./styles";
-import { MainPost, Post } from "@/components";
-import Link from "next/link";
+import { Post as PostType } from '@/domain';
+import { PostsContainer, Title } from './styles';
+import { MainPost, Post } from '@/components';
 
 type PageProps = {
+  main?: boolean;
   posts: PostType[];
 };
 
-export default function Home({ posts }: PageProps): JSX.Element {
+const Home = ({ main, posts }: PageProps): JSX.Element => {
   const [mainPost, ...rest] = posts;
 
   return (
-    <Container>
+    <>
       <Title>The Blog</Title>
 
-      <Link style={{ all: 'initial', cursor: 'pointer' }} href="/post[slug]" as={`/post/${mainPost.attributes.slug}`} key={mainPost.attributes.slug}>
-        <MainPost attributes={mainPost.attributes} />
-      </Link>
+      {main && (
+        <MainPost
+          key={mainPost.attributes.slug}
+          attributes={mainPost.attributes}
+        />
+      )}
 
       <PostsContainer>
-        {[mainPost, mainPost, mainPost].map(({ id, attributes }) => (
-          <Link style={{ all: 'unset', cursor: 'pointer' }} href="/post[slug]" as={`/post/${attributes.slug}`} key={attributes.slug}>
-            <Post attributes={mainPost.attributes} />
-          </Link>
-        ))}
-        {[mainPost, mainPost, mainPost].map(({ id, attributes }) => (
-          <Link style={{ all: 'unset', cursor: 'pointer' }} href="/post[slug]" as={`/post/${attributes.slug}`} key={attributes.slug}>
-            <Post key={`Post - ${mainPost.id}`} attributes={mainPost.attributes} />
-          </Link>
-        ))}
+        {main
+          ? rest?.map(({ attributes }) => (
+              <Post key={attributes.slug} attributes={mainPost.attributes} />
+            ))
+          : posts?.map(({ attributes }) => (
+              <Post key={attributes.slug} attributes={mainPost.attributes} />
+            ))}
       </PostsContainer>
-    </Container>
-  )
-} 
+    </>
+  );
+};
+
+export default Home;

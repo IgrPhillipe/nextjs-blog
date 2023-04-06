@@ -17,12 +17,14 @@ export const Container = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const Cover = styled.div`
   width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.colors.lightGray};
   object-fit: cover;
   border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
 `;
 
 export const Content = styled.div`
@@ -33,6 +35,7 @@ export const Content = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+  cursor: pointer;
 `;
 
 export const MainContent = styled.div`
