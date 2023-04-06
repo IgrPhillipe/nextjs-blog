@@ -27,7 +27,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/styles/tailwind.cssts"
   ],
   "exclude": [
     "node_modules"

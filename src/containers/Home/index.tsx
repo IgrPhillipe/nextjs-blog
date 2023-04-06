@@ -1,5 +1,4 @@
 import { Post as PostType } from '@/domain';
-import { PostsContainer, Title } from './styles';
 import { MainPost, Post } from '@/components';
 
 type PageProps = {
@@ -12,7 +11,7 @@ const Home = ({ main, posts }: PageProps): JSX.Element => {
 
   return (
     <>
-      <Title>The Blog</Title>
+      <h1>The Blog</h1>
 
       {main && (
         <MainPost
@@ -21,7 +20,7 @@ const Home = ({ main, posts }: PageProps): JSX.Element => {
         />
       )}
 
-      <PostsContainer>
+      <section>
         {main
           ? rest?.map(({ attributes }) => (
               <Post key={attributes.slug} attributes={mainPost.attributes} />
@@ -29,7 +28,7 @@ const Home = ({ main, posts }: PageProps): JSX.Element => {
           : posts?.map(({ attributes }) => (
               <Post key={attributes.slug} attributes={mainPost.attributes} />
             ))}
-      </PostsContainer>
+      </section>
     </>
   );
 };

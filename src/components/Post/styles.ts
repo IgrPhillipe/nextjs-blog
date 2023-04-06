@@ -1,10 +1,8 @@
-import styled from "styled-components";
-
 type SmallProps = {
   light?: boolean;
 }
 
-export const Container = styled.div`
+export const Container = `
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,17 +15,17 @@ export const Container = styled.div`
   }
 `;
 
-export const Cover = styled.div`
+export const Cover = `
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.colors.lightGray};
+  background-color: theme.colors.lightGray;
   object-fit: cover;
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
 `;
 
-export const Content = styled.div`
+export const Content = `
   width: 100%;
   height: 100%;
   display: flex;
@@ -38,7 +36,7 @@ export const Content = styled.div`
   cursor: pointer;
 `;
 
-export const MainContent = styled.div`
+export const MainContent = `
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -46,12 +44,12 @@ export const MainContent = styled.div`
   gap: 1rem;
 `;
 
-export const Title = styled.h1`
+export const Title = `
   font-size: 56px;
   font-weight: 500;
 `;
 
-export const Description = styled.p`
+export const Description = `
   display: -webkit-box;
   width: 100%;
   word-wrap: break-word;
@@ -61,7 +59,7 @@ export const Description = styled.p`
   -webkit-box-orient: vertical;
 `;
 
-export const Small = styled.small<SmallProps>`
-  font-weight: ${({ light }) => light ? 'light' : 'bold'};
-  color: ${({ theme }) => theme.colors.lightGray};
+export const Small = `
+  font-weight: light ? 'light' : 'bold';
+  color: theme.colors.lightGray;
 `;

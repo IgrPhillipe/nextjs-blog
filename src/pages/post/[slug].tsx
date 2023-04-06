@@ -3,15 +3,6 @@ import Image from 'next/image';
 import { Header, Page } from '@/components';
 import { Post as PostProps } from '@/domain';
 import { getAllPosts, getPostBySlug } from '@/pages/api';
-import {
-  Container,
-  Cover,
-  Content,
-  Description,
-  Title,
-  Small,
-  MainContent,
-} from './style';
 
 type Slug = {
   slug: string;
@@ -23,30 +14,30 @@ const SlugPost = ({ attributes }: PostProps): JSX.Element => {
   return (
     <Page>
       <Header />
-      <Container>
-        <Cover>
+      <div>
+        <div>
           <Image
             layout="fill"
             objectFit="cover"
             src={cover.data.attributes.url}
             alt={title}
           />
-        </Cover>
+        </div>
 
-        <Content>
-          <MainContent>
-            <Small light>
+        <div>
+          <div>
+            <small>
               {new Date(createdAt).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'short',
                 day: 'numeric',
               })}
-            </Small>
-            <Title>{title}</Title>
-            <Description>{content}</Description>
-          </MainContent>
-        </Content>
-      </Container>
+            </small>
+            <h1>{title}</h1>
+            <p>{content}</p>
+          </div>
+        </div>
+      </div>
     </Page>
   );
 };
