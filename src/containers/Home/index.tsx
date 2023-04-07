@@ -1,17 +1,26 @@
 import { Post as PostType } from '@/domain';
-import { MainPost, Post } from '@/components';
+import { MainPost, Post, Tabs } from '@/components';
 
 type PageProps = {
   main?: boolean;
   posts: PostType[];
+  category?: string;
 };
 
-const Home = ({ main, posts }: PageProps): JSX.Element => {
+const Home = ({ main, posts, category }: PageProps): JSX.Element => {
   const [mainPost, ...rest] = posts;
+
+  const tabs = [
+    { name: 'Profile', href: '/category/Profile' },
+    { name: 'Dashboard', href: '/category/Dashboard' },
+    { name: 'Settings', href: '/category/Settings' },
+    { name: 'Contacts', href: '/category/Contacts' },
+    { name: 'Disabled', href: '/category/Disabled' },
+  ];
 
   return (
     <>
-      <h1>The Blog</h1>
+      <Tabs tabs={tabs} category={category} />
 
       {main && (
         <MainPost
