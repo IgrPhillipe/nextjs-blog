@@ -4,7 +4,7 @@ import { Post as PostType } from '@/domain';
 
 interface PostProps extends Omit<PostType, 'id'> {}
 
-export default function Post({ attributes }: PostProps): JSX.Element {
+const Post = ({ attributes }: PostProps): JSX.Element => {
   const { title, content, createdAt, cover, slug } = attributes;
 
   return (
@@ -41,4 +41,6 @@ export default function Post({ attributes }: PostProps): JSX.Element {
       </div>
     </div>
   );
-}
+};
+
+export default Post;

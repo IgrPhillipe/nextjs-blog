@@ -4,7 +4,7 @@ import { Post } from '@/domain';
 
 interface MainPostProps extends Omit<Post, 'id'> {}
 
-export default function MainPost({ attributes }: MainPostProps): JSX.Element {
+const MainPost = ({ attributes }: MainPostProps): JSX.Element => {
   const { title, content, createdAt, cover, slug } = attributes;
 
   return (
@@ -41,4 +41,6 @@ export default function MainPost({ attributes }: MainPostProps): JSX.Element {
       </div>
     </div>
   );
-}
+};
+
+export default MainPost;

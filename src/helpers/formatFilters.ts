@@ -6,7 +6,7 @@ interface FilterParams {
 }
 
 export const formatFilterParams = ({ filter, operation, value, field }: FilterParams) => {
-  const key = `filters[${filter}]${field ? `[${field}]` : ''}[&${operation}]`
+  const key = `filters[${filter}]${field ? `[${field}]` : ''}[$${operation}]`
 
   return {
     [key]: value

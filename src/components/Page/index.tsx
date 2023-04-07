@@ -20,7 +20,7 @@ const Page = ({ page, children }: PageProps): JSX.Element => {
       </Head>
       <main>
         <Header />
-        <section>{children}</section>
+        <section className="w-full flex-col p-16 pt-0">{children}</section>
       </main>
     </>
   );

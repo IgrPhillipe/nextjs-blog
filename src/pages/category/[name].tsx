@@ -6,31 +6,33 @@ import { Page } from '@/components';
 
 interface CategoryPostsProps {
   posts: PostProps[];
+  category: string;
 }
 
-const CategoryPost = ({ posts }: CategoryPostsProps): JSX.Element => {
+const CategoryPost = ({ posts, category }: CategoryPostsProps): JSX.Element => {
+  console.log(posts);
   return (
     <Page>
-      <Home posts={posts} />
+      <Home posts={posts} category={category} />
     </Page>
   );
 };
 
 export const getServerSideProps = async ({
   params,
-}: GetServerSidePropsContext<{ category: string }>) => {
+}: GetServerSidePropsContext<{ name: string }>) => {
   try {
     const { data } = await getAllPosts({
       populate: '*',
       filters: {
         filter: 'category',
-        value: params?.category,
-        operation: 'contains',
+        value: params?.name,
+        operation: 'eq',
         field: 'name',
       },
     });
 
-    return { props: { posts: data } };
+    return { props: { posts: data, category: params?.name ?? '' } };
   } catch (error) {
     return { notFound: true };
   }
