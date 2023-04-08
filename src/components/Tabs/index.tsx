@@ -15,7 +15,7 @@ const Tabs = ({ tabs, category }: TabsProps): JSX.Element => {
     <div className="text-md scroll scrollbar-hide mb-12 flex overflow-x-scroll border-b-2 border-light-gray text-center font-normal text-cool-gray">
       <ul className="box-border flex w-full">
         {tabs.map(({ href, name }) => (
-          <li className="mr-2">
+          <li key={name} className="mr-2">
             <a
               href={href}
               className={classNames(

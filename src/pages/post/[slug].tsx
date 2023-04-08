@@ -1,11 +1,11 @@
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import Image from 'next/image';
-import { Header, Page } from '@/components';
 import { Post as PostProps } from '@/domain';
 import { getAllPosts, getPostBySlug } from '@/pages/api';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Error from 'next/error';
+import { Page } from '@/components';
 
 type Slug = {
   slug: string;
@@ -62,11 +62,7 @@ const SlugPost = ({ attributes }: PostProps): JSX.Element => {
               {content}
             </p>
 
-            <div
-              className="flex w-full items-center gap-3"
-              justify-center
-              items-center
-            >
+            <div className="flex w-full items-center gap-3">
               <div className="h-12 w-12 rounded-full bg-african-violet md:h-16 md:w-16"></div>
               <div>
                 <h5 className="line-clamp-2 truncate font-bold text-russian-violet">
@@ -107,7 +103,7 @@ export const getStaticProps = async ({
 
 export const getStaticPaths: GetStaticPaths = async () => {
   try {
-    const { data } = await getAllPosts({ fields: ['slug'] });
+    const { data } = await getAllPosts({ fields: 'slug' });
 
     const slugs = data.map(({ attributes }) => ({
       params: { slug: attributes.slug },

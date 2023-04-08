@@ -48,14 +48,9 @@ const MainPost = ({ attributes }: MainPostProps): JSX.Element => {
                 {content}
               </p>
 
-              <div
-                className="flex items-center gap-3"
-                justify-center
-                items-center
-              >
+              <div className="flex items-center gap-3">
                 <div className="relative h-10 w-10 overflow-hidden rounded-full bg-white">
                   <Image
-                    layout="fill"
                     objectFit="cover"
                     height={40}
                     width={40}

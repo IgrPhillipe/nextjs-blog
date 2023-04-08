@@ -1,6 +1,5 @@
 export {
   getAllPosts,
-  countAllPosts,
   getPostBySlug,
 } from './post'
 

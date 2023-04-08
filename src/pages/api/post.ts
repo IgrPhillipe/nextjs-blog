@@ -1,6 +1,7 @@
 import { Post, StrapiResponse } from '@/domain'
 import axios from '@/config/axios'
 import { formatFilterParams } from '@/helpers/formatFilters';
+import { writeFile } from 'fs';
 
 interface SortParams {
   [key: string]: 'ASC' | 'DESC';
@@ -17,7 +18,7 @@ interface RequestConfig {
   slug?: string;
   sort?: SortParams;
   filters?: FilterParams;
-  fields?: string[];
+  fields?: string;
   populate?: string
 }
 
@@ -25,17 +26,11 @@ export const getAllPosts = async ({ sort, filters, fields, populate }: RequestCo
   const { data } = await axios.get('/posts', {
     params: {
       ...sort,
-      ...fields,
-      ...(populate ? { populate: 'cover, author.profile' } : {}),
+      ...(fields ? { fields } : {}),
+      ...(populate ? { populate: 'cover, author.profile, category.name' } : {}),
       ...(filters ? formatFilterParams(filters) : {}),
     }
   })
-
-  return data;
-}
-
-export const countAllPosts = async (): Promise<StrapiResponse<Post[]>> => {
-  const { data } = await axios.get('/posts/count');
 
   return data;
 }
