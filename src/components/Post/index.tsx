@@ -29,13 +29,9 @@ const Post = ({ attributes }: PostProps): JSX.Element => {
           <a
             style={{
               all: 'unset',
-              height: '90%',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
             }}
           >
-            <div className="flex h-full flex-col justify-start">
+            <div className="mb-5 flex flex-col justify-start">
               <div>
                 <p className="text-sm font-bold text-ultra-violet">
                   {category?.data?.attributes?.name}

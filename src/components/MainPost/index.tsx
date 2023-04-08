@@ -44,7 +44,7 @@ const MainPost = ({ attributes }: MainPostProps): JSX.Element => {
                   {title}
                 </h1>
               </div>
-              <p className="box-orient-vertical text-md ox-border mb-10 line-clamp-4 w-full overflow-hidden text-justify font-light">
+              <p className="box-orient-vertical text-md ox-border mb-5 line-clamp-4 w-full overflow-hidden text-justify font-light">
                 {content}
               </p>
 
