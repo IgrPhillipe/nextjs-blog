@@ -44,6 +44,7 @@ export const getPostBySlug = async ({ filters, populate }: RequestConfig): Promi
   const { data } = await axios.get('/posts', {
     params: {
       ...(populate ? { populate } : {}),
+      ...(filters ? formatFilterParams(filters) : {}),
     }
   })
 

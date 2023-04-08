@@ -9,23 +9,20 @@ type Slug = {
 };
 
 const SlugPost = ({ attributes }: PostProps): JSX.Element => {
-  const { title, content, createdAt, cover } = attributes;
+  const { title, content, createdAt, cover, category, author } = attributes;
+  console.log(author);
 
   return (
     <Page>
-      <Header />
-      <div>
-        <div>
-          <Image
-            layout="fill"
-            objectFit="cover"
-            src={cover?.data?.attributes?.url}
-            alt={title}
-          />
-        </div>
-
-        <div>
-          <div>
+      <div className="flex h-full w-full flex-col items-center justify-center">
+        <div className="w-full md:w-3/5">
+          <div className="mb-5">
+            <p className="md:text-md mb-3 text-sm font-bold text-ultra-violet">
+              {category?.data?.attributes?.name}
+            </p>
+            <h1 className="box-orient-vertical text-md mb-3 box-border line-clamp-3 font-bold text-russian-violet md:text-5xl">
+              {title}
+            </h1>
             <small>
               {new Date(createdAt).toLocaleDateString('en-US', {
                 year: 'numeric',
@@ -33,8 +30,31 @@ const SlugPost = ({ attributes }: PostProps): JSX.Element => {
                 day: 'numeric',
               })}
             </small>
-            <h1>{title}</h1>
-            <p>{content}</p>
+          </div>
+          <div className="relative mb-8 h-160 w-full overflow-hidden rounded-3xl">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              src={cover?.data?.attributes?.url}
+              alt={title}
+            />
+          </div>
+
+          <p className="mb-10 w-full text-justify text-lg font-light">
+            {content}
+          </p>
+
+          <div
+            className="flex w-full items-center gap-3"
+            justify-center
+            items-center
+          >
+            <div className="h-12 w-12 rounded-full bg-african-violet md:h-16 md:w-16"></div>
+            <div>
+              <h5 className="line-clamp-2 truncate font-bold text-russian-violet">
+                {author?.data?.attributes?.name}
+              </h5>
+            </div>
           </div>
         </div>
       </div>
