@@ -1,30 +1,36 @@
 import { GetStaticProps } from 'next';
 import { Home } from '@/containers';
-import { Post } from '@/domain';
-import { getAllPosts } from '@/pages/api';
+import { Category, Post, StrapiInstance } from '@/domain';
+import { getAllCategories, getAllPosts } from '@/pages/api';
 import { Page } from '@/components';
 
 type PageProps = {
   posts: Post[];
+  categories: StrapiInstance<Category>[];
 };
 
-const App = ({ posts }: PageProps): JSX.Element => {
+const App = ({ posts, categories }: PageProps): JSX.Element => {
   return (
     <Page>
-      <Home main posts={posts} />
+      <Home main posts={posts} categories={categories} />
     </Page>
   );
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await getAllPosts({
+  const { data: posts } = await getAllPosts({
     sort: { created_at: 'ASC' },
     populate: '*',
   });
 
+  const { data: categories } = await getAllCategories({
+    sort: { created_at: 'ASC' },
+  });
+
   return {
     props: {
-      posts: data,
+      posts,
+      categories,
     },
     revalidate: 1,
   };

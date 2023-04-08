@@ -2,4 +2,8 @@ export {
   getAllPosts,
   countAllPosts,
   getPostBySlug,
-} from './posts'
+} from './post'
+
+export {
+  getAllCategories
+} from './category'
