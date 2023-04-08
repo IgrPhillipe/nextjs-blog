@@ -1,0 +1,127 @@
+{
+  "data": [
+    {
+      "id": 4,
+      "attributes": {
+        "title": "Netflix Announces New Series from Creator of Stranger Things",
+        "content": "Netflix has announced a new series from the creator of Stranger Things, Matt Duffer. The series, titled The Hellfire Club, is set in the 1950s and follows a group of high school students who get caught up in a conspiracy involving secret societies and government agents. The show promises to offer the same blend of mystery, suspense, and nostalgia that made Stranger Things a hit with audiences.",
+        "slug": "netflix-announces-new-series-from-creator-of-stranger-things",
+        "createdAt": "2023-04-07T23:54:59.848Z",
+        "updatedAt": "2023-04-07T23:56:49.837Z",
+        "publishedAt": "2023-04-07T23:55:00.815Z",
+        "cover": {
+          "data": {
+            "id": 7,
+            "attributes": {
+              "name": "yunctwi8oof91.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 1664,
+              "height": 1664,
+              "formats": {
+                "large": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680911677/large_yunctwi8oof91_ba69811019.png",
+                  "hash": "large_yunctwi8oof91_ba69811019",
+                  "mime": "image/png",
+                  "name": "large_yunctwi8oof91.png",
+                  "path": null,
+                  "size": 1601.02,
+                  "width": 1000,
+                  "height": 1000,
+                  "provider_metadata": {
+                    "public_id": "large_yunctwi8oof91_ba69811019",
+                    "resource_type": "image"
+                  }
+                },
+                "small": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680911677/small_yunctwi8oof91_ba69811019.png",
+                  "hash": "small_yunctwi8oof91_ba69811019",
+                  "mime": "image/png",
+                  "name": "small_yunctwi8oof91.png",
+                  "path": null,
+                  "size": 448.99,
+                  "width": 500,
+                  "height": 500,
+                  "provider_metadata": {
+                    "public_id": "small_yunctwi8oof91_ba69811019",
+                    "resource_type": "image"
+                  }
+                },
+                "medium": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680911677/medium_yunctwi8oof91_ba69811019.png",
+                  "hash": "medium_yunctwi8oof91_ba69811019",
+                  "mime": "image/png",
+                  "name": "medium_yunctwi8oof91.png",
+                  "path": null,
+                  "size": 942.1,
+                  "width": 750,
+                  "height": 750,
+                  "provider_metadata": {
+                    "public_id": "medium_yunctwi8oof91_ba69811019",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680911676/thumbnail_yunctwi8oof91_ba69811019.png",
+                  "hash": "thumbnail_yunctwi8oof91_ba69811019",
+                  "mime": "image/png",
+                  "name": "thumbnail_yunctwi8oof91.png",
+                  "path": null,
+                  "size": 53.15,
+                  "width": 156,
+                  "height": 156,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_yunctwi8oof91_ba69811019",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "yunctwi8oof91_ba69811019",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 878.88,
+              "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680911677/yunctwi8oof91_ba69811019.png",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "yunctwi8oof91_ba69811019",
+                "resource_type": "image"
+              },
+              "createdAt": "2023-04-07T23:54:38.541Z",
+              "updatedAt": "2023-04-07T23:54:38.541Z"
+            }
+          }
+        },
+        "author": {
+          "data": {
+            "id": 4,
+            "attributes": {
+              "name": "Movie Buff",
+              "createdAt": "2023-04-07T23:50:03.152Z",
+              "updatedAt": "2023-04-08T13:17:15.785Z",
+              "publishedAt": "2023-04-07T23:50:03.819Z"
+            }
+          }
+        },
+        "category": {
+          "data": {
+            "id": 5,
+            "attributes": {
+              "name": "Entertainment",
+              "createdAt": "2023-04-07T23:52:18.655Z",
+              "updatedAt": "2023-04-07T23:52:19.184Z",
+              "publishedAt": "2023-04-07T23:52:19.182Z"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 1 }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "An Extraordinary WebGL Has Been Released By Great China Scientists",
+        "content": "Gucci has stayed exciting and industry-leading in popular culture during a period where others are struggling to stay relevant. In the luxury fashion industry, brands have been slow adopters of utilizing innovative digital solutions and experiences to connect with consumers. Gucci however, buck that trend in a big way. Back in 2019, Gucci brought video games to its app with a new section called Gucci Arcade, inspired by creative director Alessandro Michele’s “unique ability to combine the past with the present, using contemporary technology to tell stories in an eclectic and pioneering way”. Inspired by vintage video games from the 1970s and 1980s, Gucci Arcade allows players to immerse themselves in worlds inspired by House prints, motifs and codes. Not one to settle for (already) award-winning games, Gucci asked us to raise the bar.\n\nA fun, dynamic game with multiple levels of increasing difficulty.\nWe were asked by Gucci to create a new game concept to launch the new Gucci Basket sneaker, and to do this, we created Gucci Burst; a fun, dynamic game with multiple levels of increasing difficulty that created a splash online and further propelled Gucci into leading the way in luxury fashion digital.\n\nIt’s not often clients come to you with a brief as open as this. And even if they do, they themselves tend not to be as open as the brief. But in this case, Gucci allowed us complete creative freedom. From the very beginning, we committed to close collaboration and openness, allowing us to show our process and thinking the entire way through the process. While the creative freedom excited us, this also posed a challenge in being able to nail down a direction. So, we approached this one small step at a time, imposing our own parameters to make progress.\n\nWe began by defining a theme. As the sneakers were inspired by basketball, we agreed that this would inform the gameplay. Once this was defined, we had brainstorming sessions, to explore the possibilities for games that could feature basketball themes, whether that be through the gameplay, design direction, or assets.\n\nWe whittled the gameplay concepts down to three, detailing key features of the gameplay, providing creative references, and additional features we’d include, like boosters.",
+        "slug": "an-extraordinary-web-gl-has-been-released-by-great-china-scientists",
+        "createdAt": "2023-04-02T21:56:53.308Z",
+        "updatedAt": "2023-04-07T23:56:54.985Z",
+        "publishedAt": "2023-04-07T23:41:22.340Z",
+        "cover": {
+          "data": {
+            "id": 3,
+            "attributes": {
+              "name": "724a56150521805.62fbcfe7f01da.jpeg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 1920,
+              "height": 1192,
+              "formats": {
+                "large": {
+                  "ext": ".jpeg",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680909968/large_724a56150521805_62fbcfe7f01da_dba1b0f133.jpg",
+                  "hash": "large_724a56150521805_62fbcfe7f01da_dba1b0f133",
+                  "mime": "image/jpeg",
+                  "name": "large_724a56150521805.62fbcfe7f01da.jpeg",
+                  "path": null,
+                  "size": 200.98,
+                  "width": 1000,
+                  "height": 621,
+                  "provider_metadata": {
+                    "public_id": "large_724a56150521805_62fbcfe7f01da_dba1b0f133",
+                    "resource_type": "image"
+                  }
+                },
+                "small": {
+                  "ext": ".jpeg",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680909968/small_724a56150521805_62fbcfe7f01da_dba1b0f133.jpg",
+                  "hash": "small_724a56150521805_62fbcfe7f01da_dba1b0f133",
+                  "mime": "image/jpeg",
+                  "name": "small_724a56150521805.62fbcfe7f01da.jpeg",
+                  "path": null,
+                  "size": 57.69,
+                  "width": 500,
+                  "height": 310,
+                  "provider_metadata": {
+                    "public_id": "small_724a56150521805_62fbcfe7f01da_dba1b0f133",
+                    "resource_type": "image"
+                  }
+                },
+                "medium": {
+                  "ext": ".jpeg",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680909968/medium_724a56150521805_62fbcfe7f01da_dba1b0f133.jpg",
+                  "hash": "medium_724a56150521805_62fbcfe7f01da_dba1b0f133",
+                  "mime": "image/jpeg",
+                  "name": "medium_724a56150521805.62fbcfe7f01da.jpeg",
+                  "path": null,
+                  "size": 121.06,
+                  "width": 750,
+                  "height": 466,
+                  "provider_metadata": {
+                    "public_id": "medium_724a56150521805_62fbcfe7f01da_dba1b0f133",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".jpeg",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680909968/thumbnail_724a56150521805_62fbcfe7f01da_dba1b0f133.jpg",
+                  "hash": "thumbnail_724a56150521805_62fbcfe7f01da_dba1b0f133",
+                  "mime": "image/jpeg",
+                  "name": "thumbnail_724a56150521805.62fbcfe7f01da.jpeg",
+                  "path": null,
+                  "size": 15.26,
+                  "width": 245,
+                  "height": 152,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_724a56150521805_62fbcfe7f01da_dba1b0f133",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "724a56150521805_62fbcfe7f01da_dba1b0f133",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "size": 643.91,
+              "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680909969/724a56150521805_62fbcfe7f01da_dba1b0f133.jpg",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "724a56150521805_62fbcfe7f01da_dba1b0f133",
+                "resource_type": "image"
+              },
+              "createdAt": "2023-04-07T23:26:09.778Z",
+              "updatedAt": "2023-04-07T23:26:09.778Z"
+            }
+          }
+        },
+        "author": {
+          "data": {
+            "id": 2,
+            "attributes": {
+              "name": "Cheesecake",
+              "createdAt": "2023-04-07T23:41:08.364Z",
+              "updatedAt": "2023-04-08T13:16:47.987Z",
+              "publishedAt": "2023-04-07T23:41:38.250Z"
+            }
+          }
+        },
+        "category": {
+          "data": {
+            "id": 1,
+            "attributes": {
+              "name": "Technology",
+              "createdAt": "2023-04-02T21:56:15.203Z",
+              "updatedAt": "2023-04-07T23:22:45.851Z",
+              "publishedAt": "2023-04-02T21:57:08.186Z"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 1 }
+  }
+}

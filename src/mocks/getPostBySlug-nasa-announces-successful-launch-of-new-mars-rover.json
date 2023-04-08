@@ -1,0 +1,127 @@
+{
+  "data": [
+    {
+      "id": 3,
+      "attributes": {
+        "title": "NASA Announces Successful Launch of New Mars Rover",
+        "content": "NASA has successfully launched its new Mars rover, Perseverance, marking a major milestone in the space agency's ongoing exploration of the Red Planet. The rover, which is equipped with a suite of advanced scientific instruments, will search for signs of past microbial life on Mars and collect samples for eventual return to Earth. The launch comes after years of planning and development, and represents a significant step forward in our understanding of the universe and our place in it.",
+        "slug": "nasa-announces-successful-launch-of-new-mars-rover",
+        "createdAt": "2023-04-07T23:53:11.213Z",
+        "updatedAt": "2023-04-07T23:53:27.384Z",
+        "publishedAt": "2023-04-07T23:53:12.146Z",
+        "cover": {
+          "data": {
+            "id": 6,
+            "attributes": {
+              "name": "Mars exploration rover by Maciej Rebisz.jpg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 1920,
+              "height": 1080,
+              "formats": {
+                "large": {
+                  "ext": ".jpg",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680911578/large_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2.jpg",
+                  "hash": "large_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2",
+                  "mime": "image/jpeg",
+                  "name": "large_Mars exploration rover by Maciej Rebisz.jpg",
+                  "path": null,
+                  "size": 86.25,
+                  "width": 1000,
+                  "height": 563,
+                  "provider_metadata": {
+                    "public_id": "large_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2",
+                    "resource_type": "image"
+                  }
+                },
+                "small": {
+                  "ext": ".jpg",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680911578/small_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2.jpg",
+                  "hash": "small_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2",
+                  "mime": "image/jpeg",
+                  "name": "small_Mars exploration rover by Maciej Rebisz.jpg",
+                  "path": null,
+                  "size": 24.9,
+                  "width": 500,
+                  "height": 281,
+                  "provider_metadata": {
+                    "public_id": "small_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2",
+                    "resource_type": "image"
+                  }
+                },
+                "medium": {
+                  "ext": ".jpg",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680911578/medium_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2.jpg",
+                  "hash": "medium_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2",
+                  "mime": "image/jpeg",
+                  "name": "medium_Mars exploration rover by Maciej Rebisz.jpg",
+                  "path": null,
+                  "size": 51.41,
+                  "width": 750,
+                  "height": 422,
+                  "provider_metadata": {
+                    "public_id": "medium_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".jpg",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680911577/thumbnail_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2.jpg",
+                  "hash": "thumbnail_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2",
+                  "mime": "image/jpeg",
+                  "name": "thumbnail_Mars exploration rover by Maciej Rebisz.jpg",
+                  "path": null,
+                  "size": 7.34,
+                  "width": 245,
+                  "height": 138,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "size": 299.27,
+              "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680911578/Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2.jpg",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "Mars_exploration_rover_by_Maciej_Rebisz_852733c8f2",
+                "resource_type": "image"
+              },
+              "createdAt": "2023-04-07T23:52:59.023Z",
+              "updatedAt": "2023-04-07T23:52:59.023Z"
+            }
+          }
+        },
+        "author": {
+          "data": {
+            "id": 3,
+            "attributes": {
+              "name": "Rocket Scientist",
+              "createdAt": "2023-04-07T23:49:44.314Z",
+              "updatedAt": "2023-04-08T13:17:24.117Z",
+              "publishedAt": "2023-04-07T23:49:46.498Z"
+            }
+          }
+        },
+        "category": {
+          "data": {
+            "id": 3,
+            "attributes": {
+              "name": "Science",
+              "createdAt": "2023-04-07T23:51:59.541Z",
+              "updatedAt": "2023-04-07T23:52:00.095Z",
+              "publishedAt": "2023-04-07T23:52:00.092Z"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 1 }
+  }
+}

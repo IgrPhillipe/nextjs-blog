@@ -1,0 +1,112 @@
+{
+  "data": [
+    {
+      "id": 5,
+      "attributes": {
+        "title": "Amazon Launches New Line of Eco-Friendly Products",
+        "content": "Amazon has launched a new line of eco-friendly products, as part of its commitment to sustainability. The line, called Climate Pledge Friendly, features products that meet certain environmental standards, such as being made from recycled materials or being certified by a recognized sustainability program. The move is part of Amazon's broader effort to reduce its carbon footprint and promote sustainable practices across the industry.",
+        "slug": "amazon-launches-new-line-of-eco-friendly-products",
+        "createdAt": "2023-04-07T23:56:39.075Z",
+        "updatedAt": "2023-04-08T10:50:51.574Z",
+        "publishedAt": "2023-04-07T23:56:39.746Z",
+        "cover": {
+          "data": {
+            "id": 13,
+            "attributes": {
+              "name": "1d1893d6-73a4-43db-b957-3aff618cf8fb.webp",
+              "alternativeText": null,
+              "caption": null,
+              "width": 896,
+              "height": 512,
+              "formats": {
+                "small": {
+                  "ext": ".webp",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680951042/small_1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b.webp",
+                  "hash": "small_1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b",
+                  "mime": "image/webp",
+                  "name": "small_1d1893d6-73a4-43db-b957-3aff618cf8fb.webp",
+                  "path": null,
+                  "size": 37.51,
+                  "width": 500,
+                  "height": 286,
+                  "provider_metadata": {
+                    "public_id": "small_1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b",
+                    "resource_type": "image"
+                  }
+                },
+                "medium": {
+                  "ext": ".webp",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680951042/medium_1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b.webp",
+                  "hash": "medium_1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b",
+                  "mime": "image/webp",
+                  "name": "medium_1d1893d6-73a4-43db-b957-3aff618cf8fb.webp",
+                  "path": null,
+                  "size": 71.25,
+                  "width": 750,
+                  "height": 429,
+                  "provider_metadata": {
+                    "public_id": "medium_1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".webp",
+                  "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680951042/thumbnail_1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b.webp",
+                  "hash": "thumbnail_1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b",
+                  "mime": "image/webp",
+                  "name": "thumbnail_1d1893d6-73a4-43db-b957-3aff618cf8fb.webp",
+                  "path": null,
+                  "size": 10.68,
+                  "width": 245,
+                  "height": 140,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b",
+              "ext": ".webp",
+              "mime": "image/webp",
+              "size": 115.98,
+              "url": "https://res.cloudinary.com/do0wj7tbi/image/upload/v1680951042/1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b.webp",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "1d1893d6_73a4_43db_b957_3aff618cf8fb_72f32bd59b",
+                "resource_type": "image"
+              },
+              "createdAt": "2023-04-08T10:50:42.479Z",
+              "updatedAt": "2023-04-08T10:50:42.479Z"
+            }
+          }
+        },
+        "author": {
+          "data": {
+            "id": 5,
+            "attributes": {
+              "name": "Green Guru",
+              "createdAt": "2023-04-07T23:50:19.272Z",
+              "updatedAt": "2023-04-08T13:16:58.002Z",
+              "publishedAt": "2023-04-07T23:50:19.856Z"
+            }
+          }
+        },
+        "category": {
+          "data": {
+            "id": 6,
+            "attributes": {
+              "name": "Business",
+              "createdAt": "2023-04-07T23:52:27.214Z",
+              "updatedAt": "2023-04-07T23:52:27.762Z",
+              "publishedAt": "2023-04-07T23:52:27.760Z"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 1 }
+  }
+}
