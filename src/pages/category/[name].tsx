@@ -3,6 +3,8 @@ import { Category, Post as PostProps, StrapiInstance } from '@/domain';
 import { getAllCategories, getAllPosts } from '@/pages/api';
 import { Home } from '@/containers';
 import { Page } from '@/components';
+import { useRouter } from 'next/router';
+import Error from 'next/error';
 
 interface CategoryPostsProps {
   posts: PostProps[];
@@ -15,9 +17,23 @@ const CategoryPost = ({
   category,
   categories,
 }: CategoryPostsProps): JSX.Element => {
+  const { isFallback } = useRouter();
+
+  if (!category) {
+    return <Error statusCode={404} />;
+  }
+
   return (
     <Page>
-      <Home posts={posts} category={category} categories={categories} />
+      {isFallback ? (
+        <div className="flex w-full flex-col items-center justify-center">
+          <h1 className="text-lg font-normal text-ultra-violet">
+            No results found.
+          </h1>
+        </div>
+      ) : (
+        <Home posts={posts} category={category} categories={categories} />
+      )}
     </Page>
   );
 };
