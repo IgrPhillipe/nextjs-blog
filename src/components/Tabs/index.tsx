@@ -12,8 +12,8 @@ interface TabsProps {
 
 const Tabs = ({ tabs, category }: TabsProps): JSX.Element => {
   return (
-    <div className="text-md border-b-2 border-light-gray text-center font-medium text-cool-gray">
-      <ul className="-mb-px flex flex-wrap">
+    <div className="text-md scroll scrollbar-hide mb-12 flex overflow-x-scroll border-b-2 border-light-gray text-center font-medium text-cool-gray">
+      <ul className="box-border flex w-full">
         {tabs.map(({ href, name }) => (
           <li className="mr-2">
             <a

@@ -19,7 +19,7 @@ const SlugPost = ({ attributes }: PostProps): JSX.Element => {
           <Image
             layout="fill"
             objectFit="cover"
-            src={cover.data.attributes.url}
+            src={cover?.data?.attributes?.url}
             alt={title}
           />
         </div>

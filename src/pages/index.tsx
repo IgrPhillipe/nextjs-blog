@@ -18,7 +18,7 @@ const App = ({ posts }: PageProps): JSX.Element => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await getAllPosts({
-    sort: { created_at: 'DESC' },
+    sort: { created_at: 'ASC' },
     populate: '*',
   });
 

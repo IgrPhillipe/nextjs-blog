@@ -10,7 +10,6 @@ interface CategoryPostsProps {
 }
 
 const CategoryPost = ({ posts, category }: CategoryPostsProps): JSX.Element => {
-  console.log(posts);
   return (
     <Page>
       <Home posts={posts} category={category} />

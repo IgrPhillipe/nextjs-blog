@@ -2,15 +2,14 @@ import { Header } from '@/components';
 import Head from 'next/head';
 
 interface PageProps {
-  page?: string;
   children: React.ReactNode;
 }
 
-const Page = ({ page, children }: PageProps): JSX.Element => {
+const Page = ({ children }: PageProps): JSX.Element => {
   return (
     <>
       <Head>
-        <title>{page ?? 'Next.js Blog'}</title>
+        <title>The Blog</title>
         <meta name="description" content="App to study Next.js" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -18,9 +17,11 @@ const Page = ({ page, children }: PageProps): JSX.Element => {
           rel="stylesheet"
         />
       </Head>
-      <main>
+      <main className="flex-col items-center">
         <Header />
-        <section className="w-full flex-col p-16 pt-0">{children}</section>
+        <section className="max-w-screen-3xl h-full w-full flex-col items-start justify-start p-6 pt-0 md:p-24 md:pt-0">
+          {children}
+        </section>
       </main>
     </>
   );

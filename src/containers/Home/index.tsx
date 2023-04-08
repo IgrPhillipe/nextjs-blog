@@ -29,13 +29,13 @@ const Home = ({ main, posts, category }: PageProps): JSX.Element => {
         />
       )}
 
-      <section>
+      <section className="my-12 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {main
           ? rest?.map(({ attributes }) => (
-              <Post key={attributes.slug} attributes={mainPost.attributes} />
+              <Post key={attributes.slug} attributes={attributes} />
             ))
           : posts?.map(({ attributes }) => (
-              <Post key={attributes.slug} attributes={mainPost.attributes} />
+              <Post key={attributes.slug} attributes={attributes} />
             ))}
       </section>
     </>
