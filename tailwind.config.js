@@ -7,6 +7,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    extend: {
+      height: {
+          '104': '26rem',
+          '128': '32rem',
+          '144': '36rem',
+          '160': '40rem',
+          '192': '48rem',
+          '200': '50rem',
+        },
+    },
     colors: {
       'cool-gray': "#7A83A0",
       'light-gray': "#C6CAD6",
