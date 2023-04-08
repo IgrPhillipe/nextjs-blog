@@ -28,7 +28,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/styles/tailwind.cssts"
+    "src/styles/tailwind.cssts",
+    "jest.config.js"
   ],
   "exclude": [
     "node_modules"
