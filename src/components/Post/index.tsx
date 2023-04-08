@@ -34,16 +34,16 @@ const Post = ({ attributes }: PostProps): JSX.Element => {
               justifyContent: 'space-between',
             }}
           >
-            <div className="flex h-full flex-col justify-start">
+            <div className="mb-3 flex h-full flex-col justify-start">
               <div>
                 <p className="text-sm font-bold text-ultra-violet">
                   {category?.data?.attributes?.name}
                 </p>
-                <h1 className="box-orient-vertical text-md mb-2 box-border line-clamp-3 font-bold text-russian-violet">
+                <h1 className="box-orient-vertical mb-2 box-border line-clamp-3 h-8 text-lg font-bold text-russian-violet">
                   {title}
                 </h1>
               </div>
-              <p className="box-orient-vertical box-border line-clamp-4 w-full overflow-hidden text-justify text-sm font-light">
+              <p className="box-orient-vertical text-md box-border line-clamp-4 w-full overflow-hidden text-justify font-light">
                 {content}
               </p>
             </div>
