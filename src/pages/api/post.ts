@@ -26,7 +26,7 @@ export const getAllPosts = async ({ sort, filters, fields, populate }: RequestCo
     params: {
       ...sort,
       ...fields,
-      ...(populate ? { populate } : {}),
+      ...(populate ? { populate: 'cover, author.profile' } : {}),
       ...(filters ? formatFilterParams(filters) : {}),
     }
   })

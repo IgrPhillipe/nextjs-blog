@@ -26,7 +26,7 @@ const Header = (): JSX.Element => {
       <div className="flex items-center justify-center text-center">
         {isMobile ? (
           <a
-            className="mx-5 font-medium text-light-gray transition duration-300 ease-in-out hover:text-ultra-violet"
+            className="mx-5 font-medium text-cool-gray transition duration-300 ease-in-out hover:text-ultra-violet"
             href="https://github.com/IgrPhillipe/nextjs-blog"
             target="_blank"
           >
@@ -35,13 +35,13 @@ const Header = (): JSX.Element => {
         ) : (
           <>
             <Link href="/">
-              <a className="mx-5 font-medium text-light-gray transition duration-300 ease-in-out hover:text-ultra-violet">
+              <a className="mx-5 font-medium text-cool-gray transition duration-300 ease-in-out hover:text-ultra-violet">
                 HOME
               </a>
             </Link>
 
             <a
-              className="mx-5 font-medium text-light-gray transition duration-300 ease-in-out hover:text-ultra-violet"
+              className="mx-5 font-medium text-cool-gray transition duration-300 ease-in-out hover:text-ultra-violet"
               href="https://github.com/IgrPhillipe/nextjs-blog"
               target="_blank"
             >

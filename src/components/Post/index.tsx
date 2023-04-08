@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Post as PostType } from '@/domain';
+import user from '../../../public/user.svg';
 
 interface PostProps extends Omit<PostType, 'id'> {}
 
@@ -9,7 +10,7 @@ const Post = ({ attributes }: PostProps): JSX.Element => {
     attributes;
 
   return (
-    <div className="flex h-160 w-full flex-col items-center gap-8 transition-opacity ease-in-out hover:opacity-80">
+    <div className="flex h-144 w-full flex-col items-center gap-8 transition-opacity ease-in-out hover:opacity-80">
       <div className="relative h-1/2 w-full overflow-hidden rounded-3xl bg-light-gray">
         <Link href="/post/[slug]" as={`/post/${slug}`}>
           <a className="block h-full w-full">
@@ -34,7 +35,7 @@ const Post = ({ attributes }: PostProps): JSX.Element => {
               justifyContent: 'space-between',
             }}
           >
-            <div className="mb-3 flex h-full flex-col justify-start">
+            <div className="flex h-full flex-col justify-start">
               <div>
                 <p className="text-sm font-bold text-ultra-violet">
                   {category?.data?.attributes?.name}
@@ -48,12 +49,21 @@ const Post = ({ attributes }: PostProps): JSX.Element => {
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="h-12 w-12 rounded-full bg-african-violet"></div>
-              <div>
-                <h5 className="line-clamp-2 truncate font-bold text-russian-violet">
+              <div className="relative h-10 w-10 overflow-hidden rounded-full bg-white">
+                <Image
+                  layout="fill"
+                  objectFit="cover"
+                  height={40}
+                  width={40}
+                  src={user}
+                  alt={author?.data?.attributes?.name}
+                />
+              </div>
+              <div className="flex flex-col items-start justify-start">
+                <h5 className="line-clamp-2 truncate text-sm font-bold text-russian-violet">
                   {author?.data?.attributes?.name}
                 </h5>
-                <small className="font-light">
+                <small className="text-xs font-light">
                   {new Date(createdAt).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'short',

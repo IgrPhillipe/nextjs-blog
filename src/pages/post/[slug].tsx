@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Header, Page } from '@/components';
 import { Post as PostProps } from '@/domain';
 import { getAllPosts, getPostBySlug } from '@/pages/api';
+import Link from 'next/link';
 
 type Slug = {
   slug: string;
@@ -15,11 +16,15 @@ const SlugPost = ({ attributes }: PostProps): JSX.Element => {
   return (
     <Page>
       <div className="flex h-full w-full flex-col items-center justify-center">
-        <div className="w-full md:w-3/5">
+        <div className="w-full max-w-screen-lg">
           <div className="mb-5">
-            <p className="md:text-md mb-3 text-sm font-bold text-ultra-violet">
-              {category?.data?.attributes?.name}
-            </p>
+            <Link href={`/category/${category.data.attributes.name}`}>
+              <a>
+                <p className="md:text-md mb-3 text-sm font-bold text-ultra-violet hover:underline">
+                  {category?.data?.attributes?.name}
+                </p>
+              </a>
+            </Link>
             <h1 className="box-orient-vertical text-md mb-3 box-border line-clamp-3 font-bold text-russian-violet md:text-5xl">
               {title}
             </h1>
